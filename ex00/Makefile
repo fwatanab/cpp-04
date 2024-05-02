@@ -1,6 +1,6 @@
 NAME	= Polymorphism
 
-SRC		= main.cpp
+SRC		= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS	= $(SRC:.cpp=.o)
 
@@ -13,7 +13,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
-.cpp.o:
+.cpp.c:
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
