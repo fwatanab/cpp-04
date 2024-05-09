@@ -9,11 +9,6 @@ std::string const&	Character::getName() const {
 	return name;
 }
 
-//Character::Character(const Character& other) {
-//	for (int i = 0; i < 4; i++)
-//		inventory[i] = other.inventory[i];
-//}
-
 void	Character::equip(AMateria* m) {
 	for (int i = 0; i < 4; i++) {
 		if (inventory[i] == NULL) {
