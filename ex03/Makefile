@@ -1,6 +1,6 @@
-NAME	= aa
+NAME	= RPGSimulator
 
-SRC		= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp
+SRC		= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
 
 OBJS	= $(SRC:.cpp=.o)
 
