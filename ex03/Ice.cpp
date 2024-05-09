@@ -1,11 +1,11 @@
 #include "Ice.hpp"
 
-Ice::Ice(std::string const& type) : AMateria(type) {
-	std::cout << "Ice construct" << std::endl;
-}
+Ice::Ice() : AMateria("ice") {}
 
-Ice::~Ice() {
-	std::cout << "Ice destruct" << std::endl;
+Ice::~Ice() {}
+
+Ice*	Ice::clone() const {
+	return new Ice(*this);
 }
 
 void	Ice::use(ICharacter& target) {

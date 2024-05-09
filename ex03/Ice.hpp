@@ -5,8 +5,9 @@
 
 class	Ice : public AMateria {
 	public:
-		Ice(std::string const& type);
+		Ice();
 		~Ice();
+		Ice*	clone() const;
 		void	use(ICharacter& target);
 };
 
