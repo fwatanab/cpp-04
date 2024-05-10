@@ -5,7 +5,7 @@
 
 class	MateriaSource : public IMateriaSource {
 	protected:
-		AMateria*	materia[4];
+		AMateria*	materias[4];
 		int			materiaCount;
 	public:
 		MateriaSource();
