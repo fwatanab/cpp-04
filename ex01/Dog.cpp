@@ -1,6 +1,6 @@
 #include "Dog.hpp"
 
-Dog::Dog() {
+Dog::Dog() : Animal() {
 	type = "dog";
 	std::cout << "A dog been construct" << std::endl;
 }
